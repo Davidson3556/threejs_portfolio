@@ -5,7 +5,6 @@ import { OrbitControls } from '@react-three/drei';
 import Developer from '../components/Developer.jsx';
 import CanvasLoader from '../components/Loading.jsx';
 import { workExperiences } from '../constants/index.js';
-import Button from '../components/Button.jsx';
 
 const WorkExperience = () => {
   const [animationName, setAnimationName] = useState('idle');
@@ -18,7 +17,7 @@ const WorkExperience = () => {
         <div className="work-container">
           <div className="work-canvas">
             <Canvas>
-              <ambientLight intensity={7} />
+              <ambientLight intensity={3} />
               <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
               <directionalLight position={[10, 10, 10]} intensity={1} />
               <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />

@@ -24,35 +24,35 @@ export const navLinks = [
 export const clientReviews = [
   {
     id: 1,
-    name: 'Emily Johnson',
-    position: 'Marketing Director at GreenLeaf',
-    img: 'assets/review1.png',
+    name: 'Eyimofe Orimolade',
+    position: 'Mobile Engineer at GamicHQ ',
+    img: 'assets/eyimofe.jpeg',
     review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+      'Working with Olawale was a fantastic experience. He colaborated with the team to develop a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
   },
   {
     id: 2,
-    name: 'Mark Rogers',
-    position: 'Founder of TechGear Shop',
-    img: 'assets/review2.png',
+    name: 'Ruby Izekor',
+    position: 'Frontend Developer at Weeshr',
+    img: 'assets/ruby.jpeg',
     review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+      ' Working with Olawale is a great experience. He colaborated with the team to develop a modern, user-friendly platform. His commitment to work is unmatched. ',
   },
   {
     id: 3,
-    name: 'John Dohsas',
-    position: 'Project Manager at UrbanTech ',
-    img: 'assets/review3.png',
+    name: 'Yusuf Kehinde',
+    position: 'Project Manager ',
+    img: 'assets/kenny.jpeg',
     review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+      'I can’t say enough good things about Olawale. is ability to recreate figma designs on the web is outstanding. ',
   },
   {
     id: 4,
-    name: 'Ether Smith',
-    position: 'CEO of BrightStar Enterprises',
-    img: 'assets/review4.png',
+    name: 'Kolapo (Eugene) Opeyemi',
+    position: 'Lead Frontend Developer at Weeshr',
+    img: 'assets/eugene.jpeg',
     review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+      'Olawale was a pleasure to work with, and he is always willing to learn and help. ',
   },
 ];
 
@@ -63,7 +63,7 @@ export const myProjects = [
     subdesc:
       'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
     href: 'https://transactlyy.vercel.app/sign-in',
-    texture: '/textures/project/project1.mp4',
+    texture: '/textures/project/transactlyy.mp4',
     logo: '/assets/login.svg',
     logoStyle: {
       backgroundColor: '#2A1816',
@@ -102,7 +102,7 @@ export const myProjects = [
     subdesc:
       'Built with Next.js 14,typescript,tailwind css and shadcn it ensures that you collect Weeshr helps you collect your gifts with the click of one button from your friends, fans, and family!',
     href: 'https://www.weeshr.com',
-    texture: '/textures/project/project2.mp4',
+    texture: '/textures/project/weeshr.mp4',
     logo: '/assets/weeshr_logo.svg',
     logoStyle: {
       backgroundColor: '#13202F',
@@ -139,7 +139,7 @@ export const myProjects = [
     subdesc:
       'The website is built using Vue.js for its reactive and component-driven architecture. It incorporates ShadCN UI for cohesive and modern design, Tailwind CSS for rapid and responsive styling, and TypeScript to ensure type safety and maintainable code. This stack ensures the admin panel is both powerful and scalable.',
     href: 'https://www.weeshr.com/',
-    texture: '/textures/project/project3.mp4',
+    texture: '/textures/project/weeshr_admin.mp4',
     logo: '/assets/weeshr_logo.svg',
     logoStyle: {
       backgroundColor: '#60f5a1',
@@ -178,7 +178,7 @@ export const myProjects = [
     subdesc:
       'The website is developed with React.js for its efficient component-based structure and Three.js to incorporate immersive 3D elements. JavaScript powers the sites interactivity, ensuring a smooth and engaging user experience.',
     href: 'https://www.olawale.vercel.app',
-    texture: '/textures/project/project5.mp4',
+    texture: '/textures/project/portfolio.mp4',
     logo: '/assets/logo.jpg',
     logoStyle: {
       backgroundColor: '#1C1A43',
@@ -215,7 +215,7 @@ export const myProjects = [
     subdesc:
       'The website is built using HTML for structured content, CSS for styling and layout, and JavaScript for interactive functionality. This combination ensures a visually appealing and responsive design while maintaining high performance.',
     href: 'https://www.davidson.vercel.app',
-    texture: '/textures/project/project4.mp4',
+    texture: '/textures/project/firstp.mp4',
     logo: '/assets/logo.jpg',
     logoStyle: {
       backgroundColor: '#0E1F38',
