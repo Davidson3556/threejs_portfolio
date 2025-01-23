@@ -15,56 +15,56 @@ const Contact = () => {
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
+  const { VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY } = import.meta.env;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    //service_6tl80xc
-    // template_7mu4fbs
-    // 2UNwBToOjTzTkdDcN
+
     emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: 'Olawale Awokoya',
-          from_email: form.email,
-          to_email: 'olawaledavidson1@gmail.com',
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: 'Thank you for your message 😃',
-            type: 'success',
-          });
+    .send(
+      VITE_EMAILJS_SERVICE_ID,
+      VITE_EMAILJS_TEMPLATE_ID, // Your template ID
+      {
+        from_name: form.name,
+        to_name: 'Olawale Awokoya',
+        from_email: form.email,
+        to_email: 'olawaledavidson1@gmail.com',
+        message: form.message,
+      },
+      VITE_EMAILJS_PUBLIC_KEY// Your public key
+    )
+    .then(
+      () => {
+        setLoading(false);
+        showAlert({
+          show: true,
+          text: 'Thank you for your message 😃',
+          type: 'success',
+        });
 
-          setTimeout(() => {
-            hideAlert(false);
-            setForm({
-              name: '',
-              email: '',
-              message: '',
-            });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          showAlert({
-            show: true,
-            text: "I didn't receive your message 😢",
-            type: 'danger',
+        setTimeout(() => {
+          hideAlert(false);
+          setForm({
+            name: '',
+            email: '',
+            message: '',
           });
-        },
-      );
-  };
+        }, [3000]);
+      },
+      (error) => {
+        setLoading(false);
+        console.error(error);
+
+        showAlert({
+          show: true,
+          text: "I didn't receive your message 😢",
+          type: 'danger',
+        });
+      },
+    );
+};
+
 
   return (
     <section className="c-space my-20" id="contact">
