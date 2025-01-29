@@ -58,21 +58,30 @@ const WorkExperience = () => {
           </div>
         </div>
         <div className="text-center mt-10 ">
-          <a
-            href="/assets/Awokoya_Olawale_CV.pdf"
-            download
-            className="bg-red-500 hover:bg-red-800 text-white font-bold py-2 px-4 rounded ">
-            Download CV
-          </a>
+        <a
+  href="/assets/Awokoya_Olawale_CV.pdf"
+  download
+  className="inline-flex items-center bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-5 w-5 mr-2"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+    />
+  </svg>
+  Download CV
+</a>
          
         </div>
-        {/* <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space ">
-        <a href="/assets/Awokoya_Olawale_CV.pdf"
-         download
-        className="w-fit">
-          <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
-        </a>
-      </div> */}
+        
       </div>
     </section>
   );
